@@ -1,0 +1,7 @@
+<li [ngClass]="{'list-group-item list-group-item-primary' : true}">
+  <h3>{{ animalName }}</h3>
+  <h4>Race : {{ animalType }}</h4>
+  <a class="btn btn-primary" [routerLink]="['../animals',id]">Plus de détails</a>
+  &nbsp;
+  <a class="btn btn-danger" (click)="removeAnimal(id)">Vendre l'animal</a>
+</li>

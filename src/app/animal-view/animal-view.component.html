@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h1 style="text-align: center">Les Animaux</h1>
+  <br>
+  <ul class="list-group">
+    <app-animal *ngFor="let animal of animals; let i =index"
+                  [id]="i"
+                  [animalName]="animal.name"
+                  [animalType]="animal.type">
+    </app-animal>
+  </ul>
+
+</div>

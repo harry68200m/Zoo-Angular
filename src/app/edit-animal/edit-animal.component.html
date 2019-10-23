@@ -1,0 +1,36 @@
+<div class="col-sm-8 col-sm-offset-2">
+<div class="jumbotron">
+<h1>Achat d'un animal</h1>
+</div>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group col-xs-5 col-xs-offset-3">
+        <label for="name">
+          Nom de l'animal
+        </label>
+        <input type="text" id="name" class="form-control" name="name" ngModel required>
+      </div>
+      <div class="form-group col-xs-5 col-xs-offset-3">
+        <label for="type">
+          Type
+        </label>
+        <select id="type" class="form-control" name="type" ngModel required>
+          <option value="Autruche">Autruche</option>
+          <option value="Aigle">Aigle</option>
+          <option value="Lion">Lion</option>
+          <option value="Tigre">Tigre</option>
+        </select>
+      </div>
+      <div class="form-group col-xs-5 col-xs-offset-3">
+        <label for="cri">
+          Cri de l'animal
+        </label>
+        <input type="text" id="cri" class="form-control" name="cri" ngModel required>
+
+      <br>
+        <div class="text-center">
+      <button type="submit" class="btn btn-primary text" [disabled]="f.invalid">Acheter</button></div>
+      </div>
+    </form>
+
+
+</div>
